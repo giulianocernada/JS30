@@ -1,0 +1,52 @@
+body {
+	height: 100vh;
+	background-image: url('Assets/BG.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+}
+
+.keys {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.key {
+	width: 35px;
+	height: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 15px;
+	margin: 10px;
+	border: 2px solid black;
+	border-radius: 5px;
+	transition: all 0.07s;
+	background-color: rgb(0, 0, 0, 0.5);
+}
+
+.playing {
+	border-color: white;
+	transform: scale(1.1);
+	box-shadow: 0 0 10px black;
+}
+
+.key:hover {
+	cursor: pointer;
+}
+
+.key kbd {
+	font-size: 30px;
+	margin: 0;
+	color: white;
+	font-family: 'Arvo';
+}
+
+.key span {
+	color: #FFBB2E;
+	font-family: 'Nunito';
+	font-size: 10px;
+}
